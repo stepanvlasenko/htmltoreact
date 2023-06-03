@@ -16,8 +16,12 @@ const testPost = {
 export default function App() {
     return (
         <>
-            <BaseButton text="text" color="blue"></BaseButton>
-            <BaseInput placeholder="abc"></BaseInput> 
+            <BaseButton text="text" color="blue" onClick={(event) =>{
+                console.log('clicked', event) 
+            }}></BaseButton>
+            <BaseInput placeholder="abc" onChange={(input) =>{
+                console.log(input)
+            }}></BaseInput> 
             <div className="test">
                 <Post post={testPost}></Post>
 
