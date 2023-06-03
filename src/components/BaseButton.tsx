@@ -1,16 +1,27 @@
+import { MouseEventHandler } from 'react'
 import './css/baseButton.css'
 
-interface BaseButtonProps {
+interface BaseButtonProps{
     text: string 
-    color: "green" | "blue"
+    color?: "green"|"blue"
+    onClick?: MouseEventHandler<HTMLButtonElement>
 }
 
-export default function BaseButton({text, color}: BaseButtonProps) {
+export default function BaseButton({
+    text,
+    color = 'green',
+    onClick
+}: BaseButtonProps) {
     const colorClass = 'button--' + color
 
     return (
         <>
-            <button className={"button" + " " + colorClass}>{text}</button>
+            <button
+                onClick={onClick}
+                className={"button" + " " + colorClass}
+            >
+                {text}
+            </button>
         </>
     )
 }
