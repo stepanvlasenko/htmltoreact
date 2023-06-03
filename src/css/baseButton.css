@@ -1,6 +1,14 @@
 .button {
-    padding: 8px 32px;
+    padding: 8px 320px;
     border-radius: 12px;
+    margin: 5px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 32px;
+    color: white;
 }
 
 .button:hover {
@@ -8,9 +16,9 @@
 }
 
 .button--green {
-    background-color: green;
+    background-color: #A4BC92;
 }
 
 .button--yellow {
-    background-color: yellow;
+    background-color: #3A98B9;
 }
