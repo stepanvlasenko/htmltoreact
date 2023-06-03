@@ -1,11 +1,11 @@
 import BaseButton from "./BaseButton"
+import BaseInput from "./BaseInput"
 
 export default function App() {
     return (
         <>
-            <BaseButton text="Купить" color="yellow"></BaseButton>
-            <BaseButton text="ПРодать" color="green"></BaseButton>
-            <BaseButton text="НАЙТИ" color="green"></BaseButton>
+        <BaseButton text="text" color="yellow"></BaseButton>
+        <BaseInput placeholder="Тут что-нибудь введите"></BaseInput> 
         </>
     )
 }
