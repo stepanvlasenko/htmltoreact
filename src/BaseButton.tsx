@@ -1,8 +1,8 @@
 import './css/baseButton.css'
 
-interface BaseButtonProps{
-    text:string 
-    color:"green"|"yellow"
+interface BaseButtonProps {
+    text: string 
+    color: "green" | "blue"
 }
 
 export default function BaseButton({text, color}: BaseButtonProps) {

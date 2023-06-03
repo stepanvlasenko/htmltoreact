@@ -5,11 +5,9 @@ interface BaseInputProps {
 }
 
 export default function BaseInput({placeholder}: BaseInputProps) {
-
     return (
         <>
             <input type="text" className="input" placeholder={placeholder} />
-            
         </>
     )
 }
