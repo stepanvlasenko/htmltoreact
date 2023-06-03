@@ -24,8 +24,8 @@ export default function App() {
             }}></BaseInput> 
             <div className="test">
                 <Post post={testPost}></Post>
-
             </div>
+            
         </>
     )
 }

@@ -12,26 +12,24 @@
 }
 
 .post__info {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 64px 1fr;
     gap: 24px;
-    height: min-content;
 }
 
 /* Bad sizing */
 .info__avatar {
     aspect-ratio: 1;
     border-radius: 50%;
-
-    width: 20%;
+    width: 64px;
 }
 
 .info__bio {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .post__content {
